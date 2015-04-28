@@ -58,11 +58,11 @@ var n = 100, // total number of circles
 //generates random colors for clusters
 function color(i) {
     if(!colors[i]){
-        colors[i] = "#0";
-        var character = [1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f"];
-        for(var j=0;j < 5; j++){
+        colors[i] = "#ffffff";
+        var characters = [1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f"];
+        for(var j=1;j < 4; j++){
             var value = Math.floor((Math.random()*15));
-            colors[i] += character[value];
+            colors[2*j] += characters[value];
         }
     }
     return colors[i];
